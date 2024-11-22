@@ -1,0 +1,102 @@
+/* Resetando margens e padding para evitar interferências */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FCFFFB; /* Branco esverdeado claro */
+    color: #3C3E3B; /* Cinza escuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal do formulário */
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #CD9B50; /* Dourado */
+    margin-bottom: 20px;
+}
+
+/* Legenda */
+legend {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #3C3E3B;
+}
+
+/* Estilizando os campos de input */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #3C3E3B;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #3C3E3B;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #3C3E3B;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #CD9B50; /* Dourado */
+    outline: none;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #CD9B50; /* Dourado */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #8B6A2F; /* Dourado mais escuro */
+}
+
+/* Espaço extra entre as perguntas */
+.question {
+    margin-bottom: 10px;
+}
+
+/* Estilo dos campos de seleção */
+select {
+    appearance: none;
+    background-color: #50c42a;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 6"><path d="M0 0l3 3 3-3z" fill="%233C3E3B"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+}
